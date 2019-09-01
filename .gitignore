@@ -4,5 +4,7 @@
 **/*.timestamp
 *.txt
 
-assets/caddy
+!assets/caddy/
+assets/caddy/*
 !assets/caddy/Caddyfile
+dehydrated
