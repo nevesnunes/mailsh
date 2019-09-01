@@ -8,11 +8,8 @@ This project consists of a `postfix` container to which you can send a mail with
 
 ## Running
 
-Start by copying each `*.example`, replacing each mock value and removing the `.example` extension. Shell commands are specified in `request.txt`.
+Start by copying each `*.example`, replacing each mock value, and removing the `.example` extension. Shell commands are specified in `request.txt`.
 
-Build and run the image with:
-```
-make
-```
+Build and run the image with `make`.
 
 Send a mail with `request.sh`.
