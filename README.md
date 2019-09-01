@@ -12,4 +12,4 @@ Start by copying each `*.example`, replacing each mock value, and removing the `
 
 Build and run the image with `make`.
 
-Send a mail with `request.sh`.
+Send a mail with `./request.sh`.
