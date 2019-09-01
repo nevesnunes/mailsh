@@ -1,0 +1,5 @@
+**/*.asc
+**/*.env
+**/*.gpg
+**/*.timestamp
+*.txt
