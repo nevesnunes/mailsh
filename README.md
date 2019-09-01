@@ -1,6 +1,6 @@
 # Shell By Mail
 
-This project consists of a `postfix` container to which you can send a mail with shell commands to be evaluated. You should get a reply with the evaluation result.
+A `postfix` container to which you can send a mail with shell commands to be evaluated. You should get a reply with the evaluation result.
 
 [Development Writeup](https://nevesnunes.github.io/blog/2019/08/27/Shell-By-Mail.html)
 
