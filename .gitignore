@@ -3,3 +3,6 @@
 **/*.gpg
 **/*.timestamp
 *.txt
+
+assets/caddy
+!assets/caddy/Caddyfile

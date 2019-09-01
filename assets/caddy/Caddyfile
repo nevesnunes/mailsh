@@ -1,1 +1,0 @@
-tls /etc/postfix/certs/mailsh.duckdns.org.fullchain.crt /etc/postfix/certs/mailsh.duckdns.org.key
