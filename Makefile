@@ -41,7 +41,7 @@ $(ssl-obj):
 script-obj := $(shell find . -type f -iname '*.sh')
 docker-obj := Dockerfile.timestamp
 $(docker-obj): Dockerfile Makefile $(caddy-obj) $(gpg-obj) $(script-obj) $(ssl-obj)
-	sudo docker build --tag $(container-tag) .
+	sudo docker build --rm --tag $(container-tag) .
 	sudo docker rm --force $(container-name) || true
 	touch $@
 
