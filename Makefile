@@ -26,6 +26,7 @@ ssl-obj := \
 $(ssl-obj):
 	rm -rf dehydrated
 	git clone --depth=1 https://github.com/lukas2511/dehydrated
+	mkdir -p assets/dehydrated
 	echo "$(MAILSH_DOMAIN)" > assets/dehydrated/domains.txt
 	cp assets/dehydrated/* dehydrated/
 	# `|| true`: Ignoring unknown hook errors
@@ -41,7 +42,7 @@ $(ssl-obj):
 script-obj := $(shell find . -type f -iname '*.sh')
 docker-obj := Dockerfile.timestamp
 $(docker-obj): Dockerfile Makefile $(caddy-obj) $(gpg-obj) $(script-obj) $(ssl-obj)
-	sudo docker build --tag $(container-tag) .
+	sudo docker build --rm --tag $(container-tag) .
 	sudo docker rm --force $(container-name) || true
 	touch $@
 
